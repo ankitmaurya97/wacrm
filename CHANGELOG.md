@@ -9,6 +9,15 @@ Versions follow [Keep a Changelog](https://keepachangelog.com/en/1.1.0/).
 Pre-1.0, `MINOR` bumps cover new modules; `PATCH` bumps cover bug fixes
 and polish.
 
+## [0.8.2] — 2026-11-01
+
+Upgrades dependencies to patch security vulnerabilities and keep packages current.
+
+### Security & Dependencies
+
+- Upgrade `undici`, `body-parser`, `zod`, `minimatch`, `@hono/node-server`, `fast-uri`, `qs`, and `ip-address` to latest versions.
+- Fix path resolution in `vitest.config.ts` using `fileURLToPath` for environments with spaces in directory paths.
+
 ## [0.8.1] — 2026-07-10
 
 Fixes inbound chats fragmenting into multiple threads for the same
